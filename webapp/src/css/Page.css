@@ -16,6 +16,8 @@
   font-size: 60px;
   color : white;
   font-weight: 600;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .Hero_container{
@@ -33,12 +35,28 @@
   margin-bottom: 300px;
 }
 
+#two{
+  margin-top: -150px;
+  margin-bottom: 150px;
+}
+
+#three{
+  margin-top: -150px;
+  margin-bottom: 200px;
+}
+
+#four{
+  margin-top: -150px;
+  margin-bottom: 450px;
+}
+
+
 .withopacity{
   opacity : 1;
-  transition: opacity 2s, transform 2s;
+  transition: opacity 1s, transform 2s;
 }
 
 .withoutopacity{
   opacity : 0;
-  transition: opacity 2s, transform 2s;
+  transition: opacity 1s, transform 2s;
 }
