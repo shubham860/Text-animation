@@ -1,0 +1,36 @@
+.mainhead{
+  margin-top: 220px;
+  margin-bottom: 0;
+  color : white !important;
+  font-size: 140px;
+  font-weight: 700;
+}
+
+.smallhead{
+  color:white;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.fourpara{
+  font-size: 60px;
+  color : white;
+  font-weight: 600;
+}
+
+.Hero_container{
+  margin-left : 280px;
+  margin-right: 280px;
+}
+
+.Home{
+  margin-bottom: 400px;
+}
+
+.withopacity{
+  opacity : 1
+}
+
+.withoutopacity{
+  opacity : 0
+}

@@ -10,8 +10,8 @@ class Nav extends React.Component {
          <NavLink to="/" class='para'>AirPods Pro</NavLink>
          <ul class='nav-links'>
            <li><p className='link-style'><NavLink to='/' activeClassName='chosen'>Overview</NavLink></p></li>
-           <li><p className='link-style'><NavLink to='/' activeClassName='chosen'>Tech Specs</NavLink></p></li>
-           <li><p className='link-style'><NavLink to='/'  class="add">Buy</NavLink></p></li>
+           <li><p className='link-style'><NavLink to='/Techspecs' activeClassName='chosen'>Tech Specs</NavLink></p></li>
+           <li><p className='link-style'><NavLink to='/Buy'  class="add">Buy</NavLink></p></li>
          </ul>
        </nav>
      )
