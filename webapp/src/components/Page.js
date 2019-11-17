@@ -27,7 +27,7 @@ constructor(props){
  _handle_Scroll_offSet = () => {
    var Scrollpos = window.pageYOffset;
    console.log(Scrollpos)
-   if(Scrollpos > 500 && Scrollpos < 650)
+   if(Scrollpos > 500 && Scrollpos < 740)
    {
      this.setState({
        one : true,
@@ -39,6 +39,7 @@ constructor(props){
      })
    }
  }
+
 
   render () {
     var one = this.state.one ? "withopacity" : "withoutopacity";
@@ -55,13 +56,23 @@ constructor(props){
               </Zoom>
             </div>
 
-            <div>
+            <div class="new">
               {
                 this.state.array.map((item,index)=>{
-                  return <div class={one} key={index}><p class="fourpara">{item}</p></div>
+                  return <div class={one}><p class="fourpara">{item}</p></div>
                 })
               }
+           </div>
+
+           <div class="new">
+             {
+               this.state.array.map((item,index)=>{
+                 return <div class={one}><p class="fourpara">{item}</p></div>
+               })
+             }
           </div>
+
+
         </div>
       </div>
       )
