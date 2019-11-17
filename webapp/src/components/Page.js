@@ -10,6 +10,14 @@ class Page extends React.Component {
 
 constructor(props){
   super(props);
+  this.state = {
+    one : false,
+    two : false,
+    three : false,
+    four : false,
+    array : ['Active Noise Cancellation for immersive sound.','Transparency mode for hearing what’s happening around you.','A customizable fit for all-day comfort.','Magic like you’ve never heard.']
+  }
+
 }
 
  componentDidMount(){
@@ -19,16 +27,22 @@ constructor(props){
  _handle_Scroll_offSet = () => {
    var Scrollpos = window.pageYOffset;
    console.log(Scrollpos)
-   if(Scrollpos > 560 && Scrollpos < 700)
+   if(Scrollpos > 500 && Scrollpos < 650)
    {
-     document.getElementById("new").style.opacity = 1;
+     this.setState({
+       one : true,
+     })
    }
    else{
-      document.getElementById("new").style.opacity = 0;
+     this.setState({
+       one : false,
+     })
    }
  }
 
   render () {
+    var one = this.state.one ? "withopacity" : "withoutopacity";
+    console.log(this.state)
       return(
         <div class="Master_container">
           <Nav/>
@@ -42,22 +56,14 @@ constructor(props){
             </div>
 
             <div>
-              <div class='one' id="navbar">
-                  <p className='fourpara' id='new'>Active Noise Cancellation for immersive sound.</p>
-              </div>
-              <div class='two'>
-                <p className='fourpara'>Transparency mode for hearing what’s happening around you.</p>
-              </div>
-              <div class='three'>
-                <p className='fourpara'>A customizable fit for all-day comfort.</p>
-              </div>
-              <div class='four'>
-                <p className='fourpara'>Magic like you’ve never heard.</p>
-              </div>
-            </div>
-
+              {
+                this.state.array.map((item,index)=>{
+                  return <div class={one} key={index}><p class="fourpara">{item}</p></div>
+                })
+              }
           </div>
         </div>
+      </div>
       )
   }
 }
