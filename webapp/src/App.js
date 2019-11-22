@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Page from './components/Page'
-import Tech from './components/tech'
+import Tech from './components/Tech'
 import Buy from './components/Buy'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 

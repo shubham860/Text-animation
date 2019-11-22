@@ -5,6 +5,7 @@ import '../css/Nav.css'
 import '../css/Page.css'
 import Zoom from 'react-reveal/Zoom';
 
+
 class Page extends React.Component {
 
 

@@ -53,10 +53,11 @@
 
 .withopacity{
   opacity : 1;
-  transition: opacity 1s, transform 2s;
+  transition: opacity 2s, transform 2s;
+
 }
 
 .withoutopacity{
   opacity : 0;
-  transition: opacity 1s, transform 2s;
+  transition: opacity 1s, transform 1s;
 }
